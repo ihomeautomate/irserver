@@ -18,7 +18,7 @@ docker run -p 21000:21000 -p 21000:21000/udp -it --rm --entrypoint=/bin/bash iho
 ### So you can play around with ...
 
 ```
-/usr/local/irtrans/irserver64 -timestamp -loglevel 4 -debug_code -http_port 8081 <irtrans lan device ip>
+/usr/local/irtrans/irserver64 -daemon -timestamp -loglevel 4 -logfile logs/irserver.log -debug_code -http_port 8081 <irtrans lan device ip>
 ```
 
 or 
